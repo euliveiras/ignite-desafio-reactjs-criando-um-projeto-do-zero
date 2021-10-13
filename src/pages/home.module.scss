@@ -1,1 +1,65 @@
-// TODO
+.sectionContainer{
+    
+    line-height: 1.3rem;
+    cursor: pointer;
+    
+    & + section {
+        margin-top: 3rem;
+    }
+    h1{
+        line-height: 2rem;
+        font-weight: 700;
+        font-size: 2.2rem;
+        color: var(--heading);
+    }
+
+    > p{  
+        margin: 1.5rem 0 1rem 0;
+        font-weight: 400;
+        font-size: 1.125rem;
+        color: var(--body);
+    }
+
+    .infoContainer {
+        display: flex;
+
+        span{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--body);
+        
+            svg{
+
+                width: 20px;
+                height: 26px;
+                margin-right: 0.3rem;
+            }
+
+            p, time{
+                font-size: 1rem;
+            }
+
+
+            & + span {
+                margin-left: 1.3rem;
+            }
+        }
+    }
+}
+
+.button{
+    width: 172px;
+    color: var(--highlight);
+    background-color: transparent;
+    border: 0;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-top: 3rem;
+
+}
+
+.disable{
+    visibility: hidden;
+}
+

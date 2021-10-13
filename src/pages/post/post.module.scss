@@ -1,1 +1,35 @@
-// TODO
+.container{
+    width: 100%;
+
+    > img{
+        max-width: 100%;
+    }
+
+    .infoContainer {
+        display: flex;
+        margin-top: 1.1rem;
+
+        span{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--body);
+        
+            svg{
+
+                width: 20px;
+                height: 26px;
+                margin-right: 0.3rem;
+            }
+
+            p, time{
+                font-size: 1rem;
+            }
+
+
+            & + span {
+                margin-left: 1.3rem;
+            }
+        }
+    }
+}

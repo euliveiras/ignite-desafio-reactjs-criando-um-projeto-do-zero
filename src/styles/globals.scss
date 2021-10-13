@@ -1,7 +1,49 @@
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-// TODO
+:root{
+  --highlight: #FF57B2;
+  --heading: #F8F8F8;
+  --bg: #1A1D23;
+  --info: #BBBBBB;
+  --body: #D7D7D7;
+}
+
+@media(max-width: 1080px){
+  html{
+      font-size: 93.75%;
+  }
+}
+
+@media(max-width: 720px){
+  html{
+      font-size: 87.5%;
+  }
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  font: 400 1rem "Inter", sans-serif;
+  background: var(--bg);
+}
+
+button{
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+
+  &:hover{
+    color: var(--highlight);
+  }
+}
+
